@@ -19,5 +19,14 @@ internal class Program
         two.AfficherDetails();
         three.AfficherDetails();
 
+        // j ajoute les elements de paypal
+
+        Paypal ein = new Paypal(3450, "les achats de noel", "ein@gmail.com");
+        Paypal zwei = new Paypal(865, "les achats de paque", "zwei@gmail.com");
+
+        // affichage
+        ein.AfficherDetails();
+        zwei.AfficherDetails();
+
     }
 }

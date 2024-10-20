@@ -17,6 +17,7 @@ namespace ConsoleAppPaiements
 
         public override void AfficherDetails()
         {
+            base.AfficherDetails();
             Console.WriteLine($" le montant correspond a {Montant} , avec pour description  {Description},le numero de la carte est {NumeroCarte}"); 
         }
     }
