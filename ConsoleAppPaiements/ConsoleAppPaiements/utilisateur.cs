@@ -20,16 +20,21 @@ namespace ConsoleAppPaiements
 
 
         }
+
+        public void AfficherDetails()
+        {
+            Console.WriteLine($"l utilisateur s apelle {Nom} ");
+        }
         public void AjouterPaiement(Paiement paiement)
         {
             Paiements.Add(paiement);
         }
-        public void AjouterInfos(Paiement paiement)
+        public void AjouterInfos()
         {
             Console.WriteLine($"le nom est {Nom}");
             Console.WriteLine($"les differents paiements ");
 
-            foreach( var Paiement   in Paiements)
+            foreach( var paiement   in Paiements)
             {
                 paiement.AfficherDetails();       
             }
